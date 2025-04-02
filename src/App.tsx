@@ -7,7 +7,7 @@ import Technologies from "./features/Technologies/Page/Technologies";
 
 function App() {
   return (
-    <main className="bg-white flex flex-col gap-44 items-center w-full">
+    <main className="bg-white dark:bg-darkBG dark:text-white flex flex-col gap-44 items-center w-full">
       <NavbarComp />
       <Introduction />
       <LanguageAndEduaction />

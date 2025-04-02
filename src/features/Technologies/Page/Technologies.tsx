@@ -19,14 +19,14 @@ function Technologies() {
   };
 
   return (
-    <section className="bg-white w-full flex flex-col items-center gap-6 ">
+    <section id="Tecnologies" className="bg-white dark:bg-darkBG w-full flex flex-col items-center gap-6 ">
       <h1 className="text-7xl font-bold">Tecnologías</h1>
       <p className="text-2xl">Algunas tecnologias que domino</p>
 
       <article className="w-full flex ">
         
 
-        <div className="flex justify-center bg-white w-full gap-5 px-12">
+        <div className="flex justify-center bg-white dark:bg-darkBG w-full gap-5 px-12">
           <button>
             <img
               className="hover:cursor-pointer p-4 rounded-full shadow-lg shadow-black"
@@ -36,7 +36,7 @@ function Technologies() {
             />
           </button>
 
-          <div className="bg-white shadow-inner shadow-black rounded-lg  w-full">
+          <div className="bg-lightCArd shadow-inner dark:bg-darkCard shadow-black rounded-lg  w-full">
             <div className=" grid grid-cols-3 gap-20 p-10">
               {Tecnologies.slice(Index, Index + itemsPerPage).map((tecno) => (
                 <TecnoCard
