@@ -15,9 +15,37 @@ function NavbarComp() {
       </div>
 
       <div className="flex  gap-8">
-        <button>GItHUB</button>
-        <button>Linkding</button>
-        <button>Emial</button>
+        <button className="w-12 h-12 rounded-full shadow-inner shadow-black p-2">
+          <img
+            className="w-full h-full"
+            src="https://cdn-icons-png.flaticon.com/128/4926/4926625.png"
+            alt="GitHubLogo"
+          />
+        </button>
+
+        <button className="w-12 h-12 rounded-full shadow-inner shadow-black p-2">
+          <img
+            className="w-full h-full"
+            src="https://cdn-icons-png.flaticon.com/128/61/61109.png"
+            alt="LinkeDinLogo"
+          />
+        </button>
+
+        <button className="w-12 h-12 rounded-full shadow-inner shadow-black p-2">
+          <img
+            className="w-full h-full"
+            src="https://cdn-icons-png.flaticon.com/128/3946/3946181.png"
+            alt="EmailLogo"
+          />
+        </button>
+
+        <button className="w-12 h-12 rounded-full shadow-md p-2">
+          <img
+            className="w-full h-full"
+            src="https://cdn-icons-png.flaticon.com/128/2392/2392508.png"
+            alt="DiaBoton"
+          />
+        </button>
       </div>
     </section>
   );
