@@ -1,4 +1,4 @@
-function Contact() {
+function Contact({ darkMode }: { darkMode: boolean }) {
   return (
     <section
       id="Contact"
@@ -17,7 +17,11 @@ function Contact() {
             >
               <img
                 className="w-40 h-40"
-                src="https://cdn-icons-png.flaticon.com/128/4926/4926625.png"
+                src={
+                  darkMode
+                    ? "https://cdn-icons-png.flaticon.com/128/10090/10090320.png"
+                    : "https://cdn-icons-png.flaticon.com/128/4926/4926625.png"
+                }
                 alt="GitHubLogo"
               />
             </button>
@@ -33,7 +37,11 @@ function Contact() {
             >
               <img
                 className="w-40 h-40"
-                src="https://cdn-icons-png.flaticon.com/128/61/61109.png"
+                src={
+                  darkMode
+                    ? "https://cdn-icons-png.flaticon.com/128/10090/10090314.png"
+                    : "https://cdn-icons-png.flaticon.com/128/61/61109.png"
+                }
                 alt="LinkeDinLogo"
               />
             </button>
@@ -49,7 +57,11 @@ function Contact() {
             >
               <img
                 className="w-40 h-40"
-                src="https://cdn-icons-png.flaticon.com/128/11121/11121097.png"
+                src={
+                  darkMode
+                    ? "https://cdn-icons-png.flaticon.com/128/10090/10090303.png"
+                    : "https://cdn-icons-png.flaticon.com/128/11121/11121097.png"
+                }
                 alt="WhatsappLogo"
               />
             </button>

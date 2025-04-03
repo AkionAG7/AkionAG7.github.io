@@ -27,7 +27,7 @@ function LanguageAndEduaction() {
         </div>
 
         <div className="w-1/2 bg-lightCArd dark:bg-darkCard p-4 shadow-inner shadow-black rounded-xl">
-          <h1 className="text-4xl font-bold">Eduacion</h1>
+          <h1 className="text-4xl font-bold">Educación</h1>
           {EducationInfo.map((educacion) => (
             <EducationCard
               key={educacion.Titulo}
