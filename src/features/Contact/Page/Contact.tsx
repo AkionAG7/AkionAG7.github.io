@@ -1,4 +1,7 @@
-function Contact({ darkMode }: { darkMode: boolean }) {
+import { useDarkMode } from "../../Context/DarkModeContext";
+
+function Contact() {
+  const { darkMode } = useDarkMode();
   return (
     <section
       id="Contact"

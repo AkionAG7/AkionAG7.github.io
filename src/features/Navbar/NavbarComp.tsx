@@ -1,12 +1,8 @@
 import { useNavigate } from "react-router-dom";
+import { useDarkMode } from "../Context/DarkModeContext";
 
-function NavbarComp({
-  darkMode,
-  setDarkMode,
-}: {
-  darkMode: boolean;
-  setDarkMode: (darkMode: boolean) => void;
-}) {
+function NavbarComp() {
+  const { darkMode, setDarkMode } = useDarkMode();
   const navigate = useNavigate();
   const handleNavigationProyects = () => {
     navigate("/Proyectos");
@@ -17,7 +13,7 @@ function NavbarComp({
   };
   return (
     <section
-      className="w-full h-20 shadow-md rounded-lg dark:bg-darkBG bg-white shadow-black dark:shadow-darkCard flex justify-between pl-6 pr-6 items-center
+      className="w-full h-20 shadow-md rounded-b-lg dark:bg-darkBG bg-white shadow-black dark:shadow-darkCard flex justify-between pl-6 pr-6 items-center
     fixed top-0 z-10 text-black dark:text-white"
     >
       <div className="flex  gap-8">
