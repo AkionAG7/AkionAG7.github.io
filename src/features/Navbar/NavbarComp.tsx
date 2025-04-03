@@ -1,9 +1,12 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useDarkMode } from "../Context/DarkModeContext";
 
 function NavbarComp() {
   const { darkMode, setDarkMode } = useDarkMode();
   const navigate = useNavigate();
+  const location = useLocation();
+  const isPortafolio = location.pathname === "/";
+  const isProyects = location.pathname === "/Proyectos";
   const handleNavigationProyects = () => {
     navigate("/Proyectos");
   };
@@ -17,16 +20,22 @@ function NavbarComp() {
     fixed top-0 z-10 text-black dark:text-white"
     >
       <div className="flex  gap-8">
-        <button onClick={handleNavigationPortafolio}>Portafolio</button>
-        <a href="#Introduction">Inicio</a>
-        <a href="#Education">Educación</a>
-        <a href="#Tecnologies">Técnologias</a>
-        <a href="#Experience">Experiencia</a>
-        <a href="#Contact">Contactame</a>
-        <button onClick={handleNavigationProyects}>
-          Portafolio de proyectos
-        </button>
-        <button>Descagar CV</button>
+        {isProyects && (
+          <button onClick={handleNavigationPortafolio}>Portafolio</button>
+        )}
+        {isPortafolio && (
+          <>
+            <a href="#Introduction">Inicio</a>
+            <a href="#Education">Educación</a>
+            <a href="#Tecnologies">Técnologias</a>
+            <a href="#Experience">Experiencia</a>
+            <a href="#Contact">Contactame</a>
+            <button onClick={handleNavigationProyects}>
+              Portafolio de proyectos
+            </button>
+            <button>Descagar CV</button>
+          </>
+        )}
       </div>
 
       <div className="flex  gap-8">
