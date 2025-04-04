@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Introduction() {
+  const navigate = useNavigate();
   const [hovered, setHoverd] = useState(false);
   return (
     <section
@@ -16,10 +18,16 @@ function Introduction() {
           mejorar dia a dia.
         </p>
         <div className="flex gap-6 pt-10 items-center">
-          <button className="shadow-inner dark:bg-darkCard bg-lightCArd shadow-black w-44 h-14 p-4 rounded-xl">
+          <button
+            onClick={() => navigate("/Proyectos")}
+            className="shadow-inner dark:bg-darkCard bg-lightCArd shadow-black w-44 h-14 p-4 rounded-xl"
+          >
             Ver proyectos
           </button>
-          <a href="#Contact" className="shadow-inner dark:bg-darkCard bg-lightCArd flex justify-center shadow-black w-44 h-14 p-4 rounded-xl">
+          <a
+            href="#Contact"
+            className="shadow-inner dark:bg-darkCard bg-lightCArd flex justify-center shadow-black w-44 h-14 p-4 rounded-xl"
+          >
             Contacto
           </a>
         </div>

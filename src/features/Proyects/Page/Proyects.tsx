@@ -1,13 +1,25 @@
+import ProyectList from "../Assets/ProyectList";
 import ProyectCard from "../Components/ProyectCard";
 
 function Proyects() {
   return (
-    <section className="flex w-full items-center flex-col gap-10 dark:text-white ">
+    <main className="flex w-full items-center flex-col gap-10 dark:text-whit dark:bg-darkBG h-full">
       <h1 className="text-7xl font-bold">Portafolio de proyectos</h1>
-      <article className="w-full px-32">
-      <ProyectCard />
+      <article className="w-full flex flex-col  gap-10 pb-10 px-32">
+        <>
+          {ProyectList.map((proyect) => (
+            <ProyectCard
+              key={proyect.Title}
+              Title={proyect.Title}
+              Description={proyect.Description}
+              Imagen={proyect.Imagen}
+              Deploy={proyect.Deploy}
+              Tecnologies={proyect.Tecnologies}
+            />
+          ))}
+        </>
       </article>
-    </section>
+    </main>
   );
 }
 

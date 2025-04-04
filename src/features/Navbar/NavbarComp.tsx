@@ -1,6 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useDarkMode } from "../Context/DarkModeContext";
-
 function NavbarComp() {
   const { darkMode, setDarkMode } = useDarkMode();
   const navigate = useNavigate();
