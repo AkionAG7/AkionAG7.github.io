@@ -7,19 +7,19 @@ function Contact() {
       id="Contact"
       className="flex flex-col gap-6 w-full items-center pb-20"
     >
-      <h1 className="text-7xl font-bold">Contacto</h1>
-      <h2 className="text-4xl">¿Interesado? Contáctame para trabajar juntos</h2>
+      <h1 className="text-7xl font-bold max-sm:text-4xl">Contacto</h1>
+      <h2 className="text-4xl max-sm:text-base">¿Interesado? Contáctame para trabajar juntos</h2>
 
-      <div className="px-10 w-full">
-        <article className="flex-col flex items-center justify-center bg-lightCArd dark:bg-darkCard w-full h-80 rounded-lg shadow-inner shadow-black gap-10">
-          <div className="flex gap-36">
+      <div className="px-10 max-lg:h-full w-full">
+        <article className="flex-col max-lg:h-full max-lg:pt-4 max-lg:pb-4 flex items-center justify-center max-sm:p-0 bg-lightCArd dark:bg-darkCard w-full h-80 max-sm:h-full rounded-lg shadow-inner shadow-black gap-10">
+          <div className="flex  max-sm:gap-10 gap-36 max-sm:pt-10">
             <button
               onClick={() => window.open("https://github.com/AkionAG7")}
-              className="w-48 h-48 rounded-lg shadow-inner flex items-center justify-center 
+              className="w-48 h-48 max-sm:w-16 max-sm:h-16 rounded-lg shadow-inner flex items-center justify-center 
               bg-lightCArd dark:bg-darkCard shadow-black p-2"
             >
               <img
-                className="w-40 h-40"
+                className="w-40 h-40 max-sm:w-10 max-sm:h-10"
                 src={
                   darkMode
                     ? "https://cdn-icons-png.flaticon.com/128/10090/10090320.png"
@@ -35,11 +35,11 @@ function Contact() {
                   "https://www.linkedin.com/in/akion-cheng-jimenez-b3453334a/"
                 )
               }
-              className="w-48 h-48 rounded-lg flex items-center justify-center shadow-inner
+              className="w-48 h-48 max-sm:w-16 max-sm:h-16 rounded-lg flex items-center justify-center shadow-inner
               bg-lightCArd dark:bg-darkCard shadow-black p-2"
             >
               <img
-                className="w-40 h-40"
+                className="w-40 h-40 max-sm:w-10 max-sm:h-10"
                 src={
                   darkMode
                     ? "https://cdn-icons-png.flaticon.com/128/10090/10090314.png"
@@ -55,11 +55,11 @@ function Contact() {
                   "https://wa.me/50683541298?text=Hola,%20me%20interesaría%20trabajar%20contigo"
                 )
               }
-              className="w-48 h-48 rounded-lg shadow-inner flex items-center justify-center
+              className="w-48 h-48 max-sm:w-16 max-sm:h-16 rounded-lg shadow-inner flex items-center justify-center
               bg-lightCArd dark:bg-darkCard shadow-black p-2"
             >
               <img
-                className="w-40 h-40"
+                className="w-40 h-40 max-sm:w-10 max-sm:h-10"
                 src={
                   darkMode
                     ? "https://cdn-icons-png.flaticon.com/128/10090/10090303.png"
@@ -70,7 +70,7 @@ function Contact() {
             </button>
           </div>
 
-          <p className="text-4xl">
+          <p className="text-4xl max-sm:text-base text-center max-sm:py-6">
             O enviame un correo:{" "}
             <strong
               onClick={() =>

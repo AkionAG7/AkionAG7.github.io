@@ -7,35 +7,41 @@ function Introduction() {
   return (
     <section
       id="Introduction"
-      className="w-full flex flex-row items-center dark:bg-darkBG bg-white pt-44"
+      className="w-full flex max-sm:flex-col-reverse flex-row items-center dark:bg-darkBG bg-white pt-44"
     >
-      <article className="w-1/2 flex flex-col gap-4 pl-10">
-        <h1 className="font-bold text-7xl">Akión Cheng Jiménez</h1>
-        <h2 className="text-5xl font-bold">Ingeniero en sistemas</h2>
-        <p className=" text-3xl">
+      <article className="w-1/2 flex flex-col max-sm:w-full  gap-4 pl-10">
+        <h1 className="font-bold text-7xl max-sm:text-3xl max-lg:text-4xl">
+          Akión Cheng Jiménez
+        </h1>
+        <h2 className="text-5xl font-bold max-sm:text-3xl max-lg:text-4xl">
+          Ingeniero en sistemas
+        </h2>
+        <p className=" text-3xl max-sm:text-2xl max-lg:text-2xl">
           Soy un estudiante de ingeniera en sistemas full stack de la UNA, con
           ansias de poner en practica todos mis conocimientos adquiridos y
           mejorar dia a dia.
         </p>
-        <div className="flex gap-6 pt-10 items-center">
+        <div className="flex gap-6 pt-10 items-center max-sm:justify-center max-sm:pr-10">
           <button
             onClick={() => navigate("/Proyectos")}
-            className="shadow-inner dark:bg-darkCard bg-lightCArd shadow-black w-44 h-14 p-4 rounded-xl"
+            className="shadow-inner dark:bg-darkCard bg-lightCArd shadow-black w-44 h-14 max-sm:w-32
+            max-sm:text-sm p-4  rounded-xl"
           >
             Ver proyectos
           </button>
           <a
             href="#Contact"
-            className="shadow-inner dark:bg-darkCard bg-lightCArd flex justify-center shadow-black w-44 h-14 p-4 rounded-xl"
+            className="shadow-inner dark:bg-darkCard bg-lightCArd flex justify-center shadow-black w-44 h-14 p-4
+             max-sm:w-32 max-sm:text-sm rounded-xl"
           >
             Contacto
           </a>
         </div>
       </article>
 
-      <div className="w-1/2 flex justify-end pr-10 items-center ">
+      <div className="w-1/2 max-sm:w-full flex justify-end pr-10 items-center max-sm:justify-center max-sm:pr-0 max-sm:pb-10 ">
         <img
-          className="w-[30rem] h-[30rem] rounded-full shadow-black shadow-2xl"
+          className="w-[30rem] h-[30rem] max-sm:w-[20rem] max-sm:h-[20rem] rounded-full shadow-black shadow-2xl"
           src={
             hovered
               ? "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT1UcBJbr814Itdp-nRfsN3ocVcLWwJG5idw&s"
