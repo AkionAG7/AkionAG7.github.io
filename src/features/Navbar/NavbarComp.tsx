@@ -38,7 +38,9 @@ function NavbarComp() {
               <button onClick={handleNavigationProyects}>
                 Portafolio de proyectos
               </button>
-              <button>Descagar CV</button>
+              <a href="../../../public/CV_Akion.pdf" download="CV_Akion.pdf">
+                Descagar CV
+              </a>
             </>
           )}
         </div>
@@ -135,14 +137,16 @@ function NavbarComp() {
               ✖
             </button>
             {isProyects && (
-            <button onClick={handleNavigationPortafolio}>Portafolio</button>
-          )}
+              <button onClick={handleNavigationPortafolio}>Portafolio</button>
+            )}
             {isPortafolio && (
               <>
                 <button onClick={handleNavigationProyects}>
                   Portafolio de proyectos
                 </button>
-                <button>Descagar CV</button>
+                <a href="../../../public/CV_Akion.pdf" download="CV_Akion.pdf">
+                  Descagar CV
+                </a>
               </>
             )}
           </div>
