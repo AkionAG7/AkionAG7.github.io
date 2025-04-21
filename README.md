@@ -1,54 +1,33 @@
-# React + TypeScript + Vite
+# Portafolio de Akion Cheng Jiménez
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido!
 
-Currently, two official plugins are available:
+Este proyecto es el portafolio personal de **Akion Cheng Jiménez**, creado con el objetivo de presentar de manera clara y organizada mis habilidades técnicas, proyectos realizados y experiencia en el desarrollo de software.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Aquí encontrarás una recopilación de mis principales trabajos, tecnologías que domino y enlaces a mis perfiles profesionales.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ¿Qué incluye este portafolio?
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Descripción de proyectos personales y académicos
+- Tecnologías utilizadas en cada proyecto
+- Enlaces a repositorios y despliegues web
+- Información de contacto profesional
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Tecnologías destacadas
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **Frontend:** React, Tailwind CSS, GSAP
+- **Backend:** NestJS, Node.js
+- **Base de datos:** MySQL
+- **Otras habilidades:** Git, GitHub, Flutter, Dart
+
+---
+
+📍 Proyecto en constante actualización.
+
+---
+
+> Si querés saber más sobre mí, ¡no dudés en explorar este repositorio o visitar mis redes profesionales!
