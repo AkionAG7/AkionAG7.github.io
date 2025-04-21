@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import FotoGraduacion from "../../assets/FotoGraduacion.jpg";
+import Graduacion from "../../assets/Graduacion.png";
 function Introduction() {
   const navigate = useNavigate();
   const [hovered, setHoverd] = useState(false);
@@ -42,11 +43,7 @@ function Introduction() {
       <div className="w-1/2 max-sm:w-full flex justify-end pr-10 items-center max-sm:justify-center max-sm:pr-0 max-sm:pb-10 ">
         <img
           className="w-[30rem] h-[30rem] max-sm:w-[20rem] max-sm:h-[20rem] rounded-full shadow-black shadow-2xl"
-          src={
-            hovered
-              ? "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT1UcBJbr814Itdp-nRfsN3ocVcLWwJG5idw&s"
-              : "https://i.pinimg.com/736x/53/f4/f8/53f4f85e0e8d5599b20399b3eb6cac77.jpg"
-          }
+          src={hovered ? Graduacion : FotoGraduacion}
           alt="PerfilImage"
           onMouseEnter={() => setHoverd(true)}
           onMouseLeave={() => setHoverd(false)}
