@@ -19,7 +19,7 @@ Aquí encontrarás una recopilación de mis principales trabajos, tecnologías q
 
 ### Tecnologías destacadas
 
-- **Frontend:** React, Tailwind CSS, GSAP
+- **Frontend:** React, Tailwind CSS
 - **Backend:** NestJS, Node.js
 - **Base de datos:** MySQL
 - **Otras habilidades:** Git, GitHub, Flutter, Dart
