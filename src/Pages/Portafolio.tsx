@@ -9,7 +9,7 @@ import Technologies from "../features/Technologies/Page/Technologies";
 
 function Portafolio() {
   return (
-    <main className="bg-white dark:bg-darkBG dark:text-white flex flex-col max-sm:gap-20 gap-44 items-center w-full">
+    <main className="bg-white dark:bg-darkBG dark:text-white flex flex-col max-sm:gap-20 max-lg:w-full max-sm:w-full gap-44 items-center w-full">
      
       <Introduction />
       <LanguageAndEduaction />

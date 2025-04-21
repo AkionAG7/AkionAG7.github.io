@@ -6,7 +6,6 @@ function Technologies() {
   const [Index, setIndex] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(6);
 
-
   useEffect(() => {
     const updateItemsPerPage = () => {
       if (window.innerWidth <= 640) {
@@ -33,9 +32,6 @@ function Technologies() {
     }
   };
 
-  
-
-
   return (
     <section
       id="Tecnologies"
@@ -48,7 +44,7 @@ function Technologies() {
 
       <article className="w-full flex ">
         <div className="flex justify-center bg-white dark:bg-darkBG w-full gap-5 max-sm:px-2 px-12">
-          <button className="max-sm:w-16">
+          <button className="max-sm:w-16 max-lg:w-32">
             <img
               className="hover:cursor-pointer p-4 rounded-full shadow-lg shadow-black"
               onClick={prev}
@@ -57,9 +53,11 @@ function Technologies() {
             />
           </button>
 
-          <div className="bg-lightCArd shadow-inner dark:bg-darkCard shadow-black rounded-lg  w-full
-          ">
-            <div className=" grid grid-cols-3 max-sm:grid-cols-2 max-sm:gap-4 gap-20 p-10">
+          <div
+            className="bg-lightCArd shadow-inner dark:bg-darkCard shadow-black rounded-lg w-full
+          "
+          >
+            <div className=" grid grid-cols-3 max-sm:grid-cols-2 max-sm:gap-4 gap-20 p-10 max-lg:gap-4  ">
               {Tecnologies.slice(Index, Index + itemsPerPage).map((tecno) => (
                 <TecnoCard
                   key={tecno.Name}
@@ -70,8 +68,7 @@ function Technologies() {
             </div>
           </div>
 
-
-          <button className="max-sm:w-16">
+          <button className="max-sm:w-16 max-lg:w-32">
             <img
               className="hover:cursor-pointer bg-darkFirstCard p-4 rounded-full shadow-lg shadow-black"
               onClick={next}

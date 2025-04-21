@@ -38,7 +38,7 @@ function NavbarComp() {
               <button onClick={handleNavigationProyects}>
                 Portafolio de proyectos
               </button>
-              <a href="../../../public/CV_Akion_Cheng_Jimenez.pdf" download="CV_Akion.pdf">
+              <a href="../../../public/CV_Akion_Cheng_Jimenez_English.pdf" download="CV_Akion.pdf">
                 Descagar CV
               </a>
             </>
@@ -122,7 +122,7 @@ function NavbarComp() {
       <section className="lg:hidden max-lg:block">
         {sidebarOpen && (
           <div
-            className="fixed inset-0 bg-black bg-opacity-50 z-20"
+            className="fixed inset-0 bg-black bg-opacity-50 z-20 "
             onClick={closeSidebar}
           />
         )}
@@ -144,7 +144,7 @@ function NavbarComp() {
                 <button onClick={handleNavigationProyects}>
                   Portafolio de proyectos
                 </button>
-                <a href="../../../public/CV_Akion_Cheng_Jimenez.pdf" download="CV_Akion.pdf">
+                <a href="../../../public/CV_Akion_Cheng_Jimenez_English.pdf" download="CV_Akion.pdf">
                   Descagar CV
                 </a>
               </>
@@ -153,7 +153,7 @@ function NavbarComp() {
         </div>
 
         <section
-          className="w-full h-20 shadow-md rounded-b-lg dark:bg-darkBG bg-white shadow-black dark:shadow-darkCard flex justify-between px-6 items-center
+          className="w-full max-sm:w-full h-20 shadow-md rounded-b-lg dark:bg-darkBG bg-white shadow-black dark:shadow-darkCard flex justify-between px-6 items-center
         fixed top-0 z-10 text-black dark:text-white lg:hidden"
         >
           <button onClick={() => setSidebarOpen(true)}>

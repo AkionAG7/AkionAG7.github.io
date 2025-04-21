@@ -12,7 +12,7 @@ function Experience() {
       </h2>
 
       <div className="w-full px-10">
-        <article className="flex flex-col gap-4 rounded-lg h-72 shadow-inner shadow-black p-4 dark:bg-darkCard bg-lightCArd w-full">
+        <article className="flex flex-col gap-4 rounded-lg h-full shadow-inner shadow-black p-4 dark:bg-darkCard bg-lightCArd w-full">
           <h1 className="text-4xl max-sm:text-2xl font-bold">
             Full stack developer
           </h1>
@@ -26,8 +26,8 @@ function Experience() {
           <span className="text-2xl max-sm:text-xl">
             Tiempo laborado: 2024-2025
           </span>
-          <div className="flex gap-5 text-2xl max-sm:text-xl">
-            <p>Tecnologías </p>
+          <p className="text-2xl max-sm:text-xl">Tecnologías: </p>
+          <div className="flex gap-5 text-2xl max-sm:text-xl max-sm:grid max-sm:grid-cols-2">
             <span>React</span>
             <span>NestJs</span>
             <span>TailWind</span>

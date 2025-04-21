@@ -9,8 +9,8 @@ function LanguageAndEduaction() {
       id="Education"
       className="bg-white dark:bg-darkBG flex flex-col gap-10 items-center w-full"
     >
-      <h1 className="text-7xl max-sm:text-4xl font-bold ">Idiomas y Educación</h1>
-      <p className="text-3xl max-sm:text-base">
+      <h1 className="text-7xl max-sm:text-4xl font-bold max-lg:text-center max-lg:text-5xl ">Idiomas y Educación</h1>
+      <p className="text-3xl max-sm:text-base max-lg:text-center max-lg:text-4xl">
         Mi información académica en el habito profecional
       </p>
 
