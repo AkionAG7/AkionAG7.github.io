@@ -17,10 +17,13 @@ function ProyectCard({
           <p className="flex flex-col gap-5">
             <h1 className="text-3xl"> {Title}</h1>
             <p className="text-xl"> Descripcion: {Description}</p>
-            <p className="text-xl"> tecnologias : {"   "} {
-              Tecnologies.map((tech, index) => (
+            <p className="text-xl">
+              {" "}
+              tecnologias : {"   "}{" "}
+              {Tecnologies.map((tech) => (
                 <span className="mr-4"> {tech}</span>
-              ))}</p>
+              ))}
+            </p>
           </p>
 
           <button
