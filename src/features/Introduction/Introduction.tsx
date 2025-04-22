@@ -10,7 +10,7 @@ function Introduction() {
       id="Introduction"
       className="w-full flex max-sm:flex-col-reverse flex-row items-center dark:bg-darkBG bg-white pt-44"
     >
-      <article className="w-1/2 flex flex-col max-sm:w-full  gap-4 pl-10">
+      <article className="w-1/2 flex flex-col max-sm:w-full max-sm:text-center max-sm:px-4  gap-4 pl-10">
         <h1 className="font-bold text-7xl max-sm:text-3xl max-lg:text-4xl">
           Akión Cheng Jiménez
         </h1>
@@ -22,7 +22,7 @@ function Introduction() {
           ansias de poner en practica todos mis conocimientos adquiridos y
           mejorar dia a dia.
         </p>
-        <div className="flex gap-6 pt-10 items-center max-sm:justify-center max-sm:pr-10">
+        <div className="flex gap-6 pt-10 items-center max-sm:justify-center ">
           <button
             onClick={() => navigate("/Proyectos")}
             className="shadow-inner dark:bg-darkCard bg-lightCArd shadow-black w-44 h-14 max-sm:w-32
