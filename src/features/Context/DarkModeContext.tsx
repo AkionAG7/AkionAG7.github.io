@@ -6,23 +6,22 @@ import {
   ReactNode,
 } from "react";
 
-// Tipo del contexto
+
 type DarkModeContextType = {
   darkMode: boolean;
   setDarkMode: (value: boolean) => void;
 };
 
-// Creamos el contexto con valor inicial undefined (lo forzamos a usar dentro del provider)
 const DarkModeContext = createContext<DarkModeContextType | undefined>(
   undefined
 );
 
-// Props para el proveedor
+
 type DarkModeProviderProps = {
   children: ReactNode;
 };
 
-// Provider del contexto
+
 export const DarkModeProvider = ({ children }: DarkModeProviderProps) => {
   const [darkMode, setDarkMode] = useState(
     () => localStorage.getItem("theme") === "dark"
@@ -47,7 +46,7 @@ export const DarkModeProvider = ({ children }: DarkModeProviderProps) => {
   );
 };
 
-// Hook personalizado para consumir el contexto
+
 export const useDarkMode = (): DarkModeContextType => {
   const context = useContext(DarkModeContext);
   if (!context) {
