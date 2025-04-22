@@ -38,7 +38,7 @@ function NavbarComp() {
               <button onClick={handleNavigationProyects}>
                 Portafolio de proyectos
               </button>
-              <a href="../../../public/CV_Akion_Cheng_English.pdf" download="CV_Akion.pdf">
+              <a href="/CV_Akion_Cheng_English.pdf" download="CV_Akion.pdf">
                 Descagar CV
               </a>
             </>
@@ -144,7 +144,7 @@ function NavbarComp() {
                 <button onClick={handleNavigationProyects}>
                   Portafolio de proyectos
                 </button>
-                <a href="../../../public/CV_Akion_Cheng_English.pdf" download="CV_Akion.pdf">
+                <a href="d/CV_Akion_Cheng_English.pdf" download="CV_Akion.pdf">
                   Descagar CV
                 </a>
               </>
